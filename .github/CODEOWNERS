@@ -1,0 +1,37 @@
+# CODEOWNERS file for task-manager-638
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-search @Armor-test/dept-notifications @Armor-test/grp-integration
+
+# Directory ownership
+/public/ @Armor-test/unit-design @Armor-test/unit-test @Armor-test/team-logging
+/app/ @Armor-test/dept-security @Armor-test/squad-ml @Armor-test/squad-search
+/tools/ @Armor-test/unit-design @Armor-test/team-frontend
+/services/ @Armor-test/squad-cloud @Armor-test/dept-billing @Armor-test/squad-product
+/auth/ @Armor-test/grp-integration @Armor-test/dept-release @Armor-test/grp-storage
+/pages/ @Armor-test/grp-ui @Armor-test/unit-governance
+/views/ @Armor-test/unit-cloud @Armor-test/squad-cache @Armor-test/dept-security
+/db/ @Armor-test/unit-cloud @Armor-test/team-frontend @Armor-test/grp-reporting
+/api/ @Armor-test/squad-payments @Armor-test/squad-reporting @Armor-test/dept-logging
+/spec/ @Armor-test/unit-design @Armor-test/squad-research @Armor-test/grp-reporting
+/third_party/ @Armor-test/team-security @Armor-test/dept-ui @Armor-test/squad-reporting
+/test/ @Armor-test/squad-research @Armor-test/dept-data
+/internal/ @Armor-test/grp-search @Armor-test/squad-payments @Armor-test/dept-data
+
+# File type ownership
+*.lock @Armor-test/unit-test @Armor-test/squad-payments
+*.html @Armor-test/squad-cloud @Armor-test/squad-frontend
+*.properties @Armor-test/squad-search @Armor-test/squad-ml
+*.gradle @Armor-test/squad-product @Armor-test/unit-design
+*.graphql @Armor-test/dept-data @Armor-test/unit-cloud
+*.json @Armor-test/dept-release @Armor-test/squad-frontend
+*.c @Armor-test/squad-cache @Armor-test/grp-ui
+*.h @Armor-test/grp-payments @Armor-test/grp-ui
+*.java @Armor-test/squad-qa @Armor-test/squad-frontend
+*.cpp @Armor-test/grp-storage @Armor-test/team-security @Armor-test/dept-reliability
+*.py @Armor-test/squad-product @Armor-test/squad-api
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+/src/**/security/ @Armor-test/security @Armor-test/compliance
